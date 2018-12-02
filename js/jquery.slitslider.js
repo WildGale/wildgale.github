@@ -479,7 +479,7 @@
 
 				clearTimeout( this.slideshow );
 				this.isPlaying = false;
-				this.options.autoplay = false;
+				this.options.autoplay = true;
 
 			}
 
