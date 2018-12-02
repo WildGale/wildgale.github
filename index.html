@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CHOOSE-STORE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
+  <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
+  <meta name="author" content="Codrops" />
+  <link rel="shortcut icon" href="../favicon.ico"> 
+  <link rel="stylesheet" type="text/css" href="animate.css">
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+  <noscript>
+      <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+    </noscript>
+  <script src="wow.min.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
+</head>
+<body>
+
+
+
+  <form class="form">
+    <input type="hidden" name="project_name" value="Site Name">
+    <input type="hidden" name="admin_email" value="admin@mail.com">
+    <input type="hidden" name="form_subject" value="Form Subject">
+    <input type="text" name="Name" placeholder="Ваше имя..." required><br>
+    <input type="text" name="E-mail" placeholder="Ваш E-mail..." required><br>
+    <input type="text" name="Phone" placeholder="Ваш телефон..."><br>
+    <input type="text" name="Text" placeholder="Желаемая модель..." class="text"><br>
+    <div class="button">
+      <a>Отправить</a>
+    </div>
+  </form>
+  <div id="bg"></div>
+  <div class="menu" id="menu">
+  <a class="navbar-logo" href=""><img src="logo.png" id="logo"></a>
+    <div class="menu__icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <div class="menu__links">
+        <a class="menu__links-item" href="#Delivery">Доставка</a>
+        <a class="menu__links-item" href="#warranty">Гарантия</a>
+        <a class="menu__links-item" href="#About">О нас</a>
+        <a class="menu__links-item" href="#Service">Сервис</a>
+        <a class="menu__links-item" href="#catalog">Каталог</a>
+    </div>
+</div>
+<div class="container demo-2">
+<div id="slider" class="sl-slider-wrapper">
+
+        <div class="sl-slider">
+        
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-1"></div>
+              <h2>A bene placito.</h2>
+              <blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
+            </div>
+          </div>
+          
+          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-2"></div>
+              <h2>Regula aurea.</h2>
+              <blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
+            </div>
+          </div>
+          
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-3"></div>
+              <h2>Dum spiro, spero.</h2>
+              <blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
+            </div>
+          </div>
+          
+          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-4"></div>
+              <h2>Donna nobis pacem.</h2>
+              <blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
+            </div>
+          </div>
+          
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-5"></div>
+              <h2>Acta Non Verba.</h2>
+              <blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
+            </div>
+          </div>
+        </div><!-- /sl-slider -->
+
+        <nav id="nav-dots" class="nav-dots">
+          <span class="nav-dot-current"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </nav>
+
+      </div><!-- /slider-wrapper -->
+</div>
+<section id="home">
+  <img src="logo.png" id="xlogo">
+  <img src="images/wall.jpg" id="wall">
+</section>
+<section  class="iphone wow fadeInLeft" id="catalog">
+  <h1 class="ihead">iPhone 5S/SE</h1>
+  <img src="images/5.png" id="i5s">
+  <div class="price">
+  <h2>Новые</h2>
+  <p>6 16 - 18990</p>
+  <p>6 32 - 19990</p><br>
+  <h2>Восстановленные</h2>
+  <p>6 16 без Touch id - 11990</p>
+  <p>6 64 без Touch id - 12990</p>
+  <p>6 Plus 16 без Touch id - 13990</p>
+  <p>6 Plus 64 без Touch id - 14990</p>
+  <p>6 16 - 12990</p>
+  <p>6 64 - 13990</p>
+  <p>6 Plus 16 - 14990</p>
+  <p>6 Plus 64 - 15990</p>
+  </div>
+  <div class="button">
+  <a>Купить</a>
+  </div>
+</section>
+<section class="iphone wow fadeInRight">
+<h1 class="ihead">iPhone 6/6 Plus</h1>
+    <img src="images/6.png" id="i6">
+  <div class="price">
+  <h2>Новые</h2>
+  <p>6 16 - 18990</p>
+  <p>6 32 - 19990</p><br>
+  <h2>Восстановленные</h2>
+  <p>6 16 без Touch id - 11990</p>
+  <p>6 64 без Touch id - 12990</p>
+  <p>6 Plus 16 без Touch id - 13990</p>
+  <p>6 Plus 64 без Touch id - 14990</p>
+  <p>6 16 - 12990</p>
+  <p>6 64 - 13990</p>
+  <p>6 Plus 16 - 14990</p>
+  <p>6 Plus 64 - 15990</p>
+  </div>
+
+  <div class="button">
+  <a>Купить</a>
+  </div>
+</section>
+
+<section  class="iphone wow fadeInLeft">
+  <h1 class="ihead">iPhone 6S</h1>
+  <img src="images/iphone-6s-plus-topic-800x800.png" id="i6s">
+  <div class="price">
+  <h2>Новые</h2>
+  <p>6 16 - 18990</p>
+  <p>6 32 - 19990</p><br>
+  <h2>Восстановленные</h2>
+  <p>6 16 без Touch id - 11990</p>
+  <p>6 64 без Touch id - 12990</p>
+  <p>6 Plus 16 без Touch id - 13990</p>
+  <p>6 Plus 64 без Touch id - 14990</p>
+  <p>6 16 - 12990</p>
+  <p>6 64 - 13990</p>
+  <p>6 Plus 16 - 14990</p>
+  <p>6 Plus 64 - 15990</p>
+  </div>
+  <div class="button">
+  <a>Купить</a>
+  </div>
+</section>
+<section class="iphone wow fadeInRight">
+  <h1 class="ihead">iPhone 7/7 Plus</h1>
+  <img src="images/iphone7-plus-jet-black.png" id="i7">
+  <div class="price">
+  <h2>Новые</h2>
+  <p>6 16 - 18990</p>
+  <p>6 32 - 19990</p><br>
+  <h2>Восстановленные</h2>
+  <p>6 16 без Touch id - 11990</p>
+  <p>6 64 без Touch id - 12990</p>
+  <p>6 Plus 16 без Touch id - 13990</p>
+  <p>6 Plus 64 без Touch id - 14990</p>
+  <p>6 16 - 12990</p>
+  <p>6 64 - 13990</p>
+  <p>6 Plus 16 - 14990</p>
+  <p>6 Plus 64 - 15990</p>
+  </div>
+  <div class="button">
+  <a>Купить</a>
+  </div>
+</section>
+<section class="iphone wow fadeInLeft">
+ <h1 class="ihead">iPhone 8/8 Plus</h1> 
+ <img src="images/6f3bafcc-a4f1-4072-980b-dc9d162fbf7a.png" id="i8">
+ <div class="price">
+  <h2>Новые</h2>
+  <p>6 16 - 18990</p>
+  <p>6 32 - 19990</p><br>
+  <h2>Восстановленные</h2>
+  <p>6 16 без Touch id - 11990</p>
+  <p>6 64 без Touch id - 12990</p>
+  <p>6 Plus 16 без Touch id - 13990</p>
+  <p>6 Plus 64 без Touch id - 14990</p>
+  <p>6 16 - 12990</p>
+  <p>6 64 - 13990</p>
+  <p>6 Plus 16 - 14990</p>
+  <p>6 Plus 64 - 15990</p>
+  </div>
+ <div class="button">
+  <a>Купить</a>
+  </div>
+</section>
+<section class="iphone wow fadeInRight">
+ <h1 class="ihead">iPhone X</h1> 
+ <img src="images/x.png" id="ix">
+ <div class="price">
+  <h2>Новые</h2>
+  <p>6 16 - 18990</p>
+  <p>6 32 - 19990</p><br>
+  <h2>Восстановленные</h2>
+  <p>6 16 без Touch id - 11990</p>
+  <p>6 64 без Touch id - 12990</p>
+  <p>6 Plus 16 без Touch id - 13990</p>
+  <p>6 Plus 64 без Touch id - 14990</p>
+  <p>6 16 - 12990</p>
+  <p>6 64 - 13990</p>
+  <p>6 Plus 16 - 14990</p>
+  <p>6 Plus 64 - 15990</p>
+  </div>
+ <div class="button">
+  <a>Купить</a>
+  </div>
+</section>
+<section class="iphone wow fadeInLeft">
+ <h1 class="ihead">iPhone Xs/Xs Max</h1> 
+ <img src="images/iPhone-Xs-Max.png" id="ixs">
+ <div class="price">
+  <h2>Новые</h2>
+  <p>6 16 - 18990</p>
+  <p>6 32 - 19990</p><br>
+  <h2>Восстановленные</h2>
+  <p>6 16 без Touch id - 11990</p>
+  <p>6 64 без Touch id - 12990</p>
+  <p>6 Plus 16 без Touch id - 13990</p>
+  <p>6 Plus 64 без Touch id - 14990</p>
+  <p>6 16 - 12990</p>
+  <p>6 64 - 13990</p>
+  <p>6 Plus 16 - 14990</p>
+  <p>6 Plus 64 - 15990</p>
+  </div>
+ <div class="button">
+  <a>Купить</a>
+  </div>
+</section>
+<section class="iphone wow fadeInRight">
+ <h1 class="ihead">iPhone XR</h1>
+  <img src="images/iPhone-Xr.png"  id="ixr">
+  <div class="price">
+  <h2>Новые</h2>
+  <p>6 16 - 18990</p>
+  <p>6 32 - 19990</p><br>
+  <h2>Восстановленные</h2>
+  <p>6 16 без Touch id - 11990</p>
+  <p>6 64 без Touch id - 12990</p>
+  <p>6 Plus 16 без Touch id - 13990</p>
+  <p>6 Plus 64 без Touch id - 14990</p>
+  <p>6 16 - 12990</p>
+  <p>6 64 - 13990</p>
+  <p>6 Plus 16 - 14990</p>
+  <p>6 Plus 64 - 15990</p>
+  </div>
+  <div class="button">
+  <a>Купить</a>
+  </div>
+</section>
+<section class="About" id="About">
+  <div class="blackbg">
+   <h1>О нас</h1>
+  <p>
+    Наша главная цель - помочь сделать свой выбор наиболее правильным,подобрать именно то, что вам необходимо в данный момент. Наши специалисты с радостью всегда вам в этом помогут. Мы не стараемся продать в моменте по высокой цене некачественный товар ! Каждый день мы работаем над качеством сервиса, стараясь для вас. Нам важно , чтобы наш клиент вернулся к нам или даже посоветовал нас своим друзьям или знакомым - это будет значит , что мы на правильном пути.</br>
+  </p>
+  </div>
+</section>
+<section class="Delivery" id="Delivery">
+    <div class="blackbg">
+    <h1>Доставка</h1>
+  <p>
+    Тут что либо про доставку
+  </p> 
+</div>
+</section>
+<section class="Service" id="Service">
+    <div class="blackbg">
+  <h1>Сервис</h1>
+  <p>Тут что либо написать про сервис</p>
+</div>
+</section>
+<section class="warranty" id="warranty"> 
+<div class="blackbg">    
+  <h1>Гарантия</h1>
+  <p>
+    Мы предоставляем Гарантию от Аpple до 2х лет на все устройства купленные в нашей сети магазинов. Мы не будем скрывать того, что браков нет - они есть везде. Мы умеем признавать ошибки и даже если случилась неприятность , мы в кратчайший срок заменим устройство. </br>
+  </p>
+</div>
+</section>
+<a class="dg-widget-link" href="http://2gis.ru/nabchelny/firm/70000001034230870/center/52.396027,55.731864/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Набережных Челнов</a><div class="dg-widget-link"><a href="http://2gis.ru/nabchelny/center/52.396027,55.731864/zoom/16/routeTab/rsType/bus/to/52.396027,55.731864╎Choose, фирма?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Choose, фирма</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+<script charset="utf-8">
+  var width_100_percent; 
+width_100_percent="100%";
+new DGWidgetLoader({"width":width_100_percent,"height":600,"borderColor":"#a3a3a3","pos":{"lat":55.731864,"lon":52.396027,"zoom":16},"opt":{"city":"nabchelny"},"org":[{"id":"70000001034230870"}]});</script>
+<noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+  <script type="text/javascript" src="js/jquery.slitslider.js"></script>
+  <script type="text/javascript"> 
+      $(function() {
+      
+        var Page = (function() {
+
+          var $nav = $( '#nav-dots > span' ),
+            slitslider = $( '#slider' ).slitslider( {
+              onBeforeChange : function( slide, pos ) {
+
+                $nav.removeClass( 'nav-dot-current' );
+                $nav.eq( pos ).addClass( 'nav-dot-current' );
+
+              }
+            } ),
+
+            init = function() {
+
+              initEvents();
+              
+            },
+            initEvents = function() {
+
+              $nav.each( function( i ) {
+              
+                $( this ).on( 'click', function( event ) {
+                  
+                  var $dot = $( this );
+                  
+                  if( !slitslider.isActive() ) {
+
+                    $nav.removeClass( 'nav-dot-current' );
+                    $dot.addClass( 'nav-dot-current' );
+                  
+                  }
+                  
+                  slitslider.jump( i + 1 );
+                  return false;
+                
+                } );
+                
+              } );
+
+            };
+
+            return { init : init };
+
+        })();
+
+        Page.init();
+      });
+    </script>
+</body>
+</html>
+</html>

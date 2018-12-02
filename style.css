@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@font-face {
+font-family: 'San Francisco Text Regular';
+src: url('SFUIText-Regular.eot');
+src: url('SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+url('SFUIText-Regular.woff') format('woff'),
+url('SFUIText-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Myriad Pro Light';
+src: url('MyriadPro-Light.eot');
+src: url('MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+url('MyriadPro-Light.woff') format('woff'),
+url('MyriadPro-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'San Francisco Text Light';
+src: url('SFUIText-Light.eot');
+src: url('SFUIText-Light.eot?#iefix') format('embedded-opentype'),
+url('SFUIText-Light.woff') format('woff'),
+url('SFUIText-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+#bg {
+    position: fixed;
+    z-index: 8000;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+.menu {
+    text-align: center;
+    background: rgba(0,0,0,.8) ;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+}
+#logo{
+    width: 80px;
+    float: left;
+    position: absolute;
+    left: 10%;
+}
+
+.menu__icon {
+   display: none;
+   width: 45px;
+   height: 35px;
+   position: relative;
+   cursor: pointer;
+   margin: 5px;
+   top: 3px;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+
+.menu__links-item {
+    display: inline-block;
+    color: #fff;
+    font-family: 'San Francisco Text Light', sans-serif;
+    font-size: 14px;
+    line-height: 45px;
+    padding-right: 3%;
+    padding-left: 3%;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.menu__links-item:hover {
+    opacity: .65;
+    transition: .5s;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  height: 325px;
+  
+}
+
+
+#home{
+  display: block;
+    height: 100vh;
+    background: #000;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    float: left;
+}
+#wall{
+    display: block;
+    margin: auto;
+    width: 80%;
+
+}
+#xlogo{
+    display: block;
+    margin: auto;
+    width: 20%;
+    padding-top: 10vh;
+}
+.iphone{
+  display: block;
+  height: 100vh;
+  background: #fafafa;
+  width: 49%;
+  float: left;
+  margin-top: 1%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+#i6{
+  height: 50%;
+  float:right;
+  margin-top: 5%;
+  margin-right: 10%;
+  position: relative;
+}
+#i6s{
+  height: 50%;
+  float:right;
+  margin-top: 5%;
+  margin-right: 10%;
+  position: relative;
+}
+#i5s{
+  height: 50%;
+  float:right;
+  margin-top:5%;
+  margin-right: 10%;
+  position: relative;
+}
+#i7{
+  height: 50%;
+  float:right;
+  margin-top: 5%;
+  margin-right: 10%;
+  position: relative;
+}
+#i8{
+  height: 50%;;
+  float:right;
+  margin-top: 5%;
+  margin-right: 10%;
+  position: relative;
+}
+#ix{
+  height: 50%;
+  float:right;
+  margin-top: 5%;
+  margin-right: 10%;
+  position: relative;
+}
+#ixs{
+  height: 50%;
+  float:right;
+  margin-top: 5%;
+  margin-right: 10%;
+  position: relative;
+}
+#ixr{
+  height: 50%;
+  float:right;
+  margin-top: 5%;
+  margin-right: 10%;
+  position: relative;
+}
+.ihead{
+    letter-spacing: 2px;
+    color: #222;
+    font-family: 'San Francisco Text Regular';
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5%;
+    position: relative;
+    width: 100%;
+}
+.price p{
+  color: #666;
+  font-family: 'San Francisco Text Regular';
+  font-size: 15px;
+}
+.price{
+  float:left;
+  padding-top: 8%;
+  position: relative;
+  padding-left: 6%;
+ font-family: 'San Francisco Text Regular';
+ width: 40%;
+}
+.button a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 20px;
+  background: #1473e6;
+  transition: 0.2s;
+  text-align: center;
+} 
+.button{
+  float: left;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top:10%;
+  cursor: pointer;
+
+}
+.button a:hover { background: #155eb7; }
+.button a:active { background: #155eb7; }
+
+.form{
+  position: fixed;
+  z-index: 9000;
+  width: 30%;
+  background: rgba(255,255,255,1);
+  margin-left: 35%;
+  height: 70%;
+  margin-top: 5%;
+  border-radius: 10px;
+  display: none;
+}
+.form input{
+  border: none;
+  background-color: #efefef;
+  width: 80%;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 10px;
+  height: 30px;
+  box-shadow: inset 0px 1px 0px #999;
+}
+#Text{
+height: 200px;
+}
+.warranty h1{
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: 'San Francisco Text Regular';
+  font-size: 50px;
+  text-align: center;
+  padding-top: 3%;
+  width: 100%;
+}
+.warranty{
+  display: block;
+  height: auto;
+  background: url(images/holiday_tile_subhead_2a_large.jpg);
+  background-size: 100% auto;
+  width: 100%;
+  float: left;
+}
+
+.warranty p{
+  color: #fff;
+  font-family: 'San Francisco Text Light';
+  font-size: 20px;
+  width: 100%;
+  padding: 5%;
+  text-align: center;
+}
+.About h1{
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: 'San Francisco Text Regular';
+  font-size: 50px;
+  text-align: center;
+  padding-top: 2%;
+  width: 100%;
+}
+.About{
+  display: block;
+  height: auto;
+  width: 100%;
+  float: left;
+  margin:20px 0 20px;
+  background-image: url(images/choose_red_large.jpg) ;
+  background-size: auto 100%;
+}
+.About p{
+  color: #fff;
+  font-family: 'San Francisco Text Light';
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+
+
+}
+.blackbg{
+    background: rgba(0,0,0,0.7);
+    margin:10% 20% 10%;
+    border-radius: 30px;
+}
+.Delivery h1{
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: 'San Francisco Text Regular';
+  font-size: 40px;
+  text-align: center;
+  padding-top: 5%;
+  position: relative;
+  width: 100%;
+}
+.Delivery{
+  display: block;
+  height: auto;
+  width: 100%;
+  float: left;
+  margin:20px 0 20px;
+  background-image: url(images/1.jpg) ;
+  background-size: 100% auto;
+}
+
+.Delivery p{
+  color: #fff;
+  font-family: 'San Francisco Text Light';
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+}
+
+.Service h1{
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: 'San Francisco Text Regular';
+  font-size: 50px;
+  text-align: center;
+  padding-top: 2%;
+  width: 100%;
+}
+.Service{
+  display: block;
+  height: auto;
+  width: 100%;
+  float: left;
+  margin:20px 0 20px;
+  background-image: url(images/2.jpg) ;
+  background-size: 100% auto;
+}
+.Service p{
+  color: #fff;
+  font-family: 'San Francisco Text Light';
+  font-size: 20px;
+  width: 100%;
+  padding:3% 30% 10%;
+  text-align: center;
+
+}
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  .menu__icon{
+    display: inline-block;
+  }
+.form{
+  margin-top: 15%;
+  width: 80%;
+  margin-left: 10%;
+}
+  .button{
+margin-bottom: 10%;
+
+}
+  .ihead{
+    font-size: 30px;
+  }
+  .price{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+  }
+  .price p{
+    font-size: 15px;
+  }
+  
+  #logo{
+    width: 85px;
+    float: left;
+    left: 5%;
+}
+  
+  .menu__links {
+    position: fixed;
+    height: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 49px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9000;
+    overflow: hidden;
+    transition: height 0.3s ease 0.05s
+  }
+  .menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  #xlogo{
+    width: 40%;
+
+}
+#wall{
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding-top: 10vh;
+
+}
+.iphone{
+  width: 100%;
+  height: auto;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+#i6s{
+  float: none;
+  height: auto;
+  width: 100%;
+  padding: 10% 10% 0%;
+  margin-top: 0;
+  margin-right: 0;
+}
+#i6{
+  float: none;
+  height: auto;
+  width: 100%;
+  padding: 10% 15% 0%;
+  margin-top: 0;
+  margin-right: 0;
+}
+#i5s{
+  float: none;
+  height: auto;
+  width: 100%;
+  padding: 10% 15% 0%;
+  margin-top: 0;
+  margin-right: 0;
+   margin-right: 0;
+}
+#i7{
+  float: none;
+  height: auto;
+  width: 100%;
+  padding: 10% 15% 0%;
+  margin-top: 0;
+   margin-right: 0;
+}
+#i8{
+  float: none;
+  height: auto;
+  width: 100%;
+  padding: 10% 15% 0%;
+  margin-top: 0;
+   margin-right: 0;
+}
+#ix{
+  float: none;
+  height: auto;
+  width: 100%;
+  padding: 10% 15% 0%;
+  margin-top: 0;
+  margin-right: 0;
+}
+#ixs{
+  float: none;
+  height: auto;
+  width: 100%;
+  padding: 10% 15% 0%;
+  margin-top: 0;
+  margin-right: 0;
+}
+#ixr{
+  float: none;
+  height: auto;
+  width: 100%;
+  padding: 10% 15% 0%;
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.menu {
+    text-align: right;
+}
+body{
+  width: 100%;
+}
+  .warranty h1{
+  font-size: 30px;
+}
+.warranty{
+  height: auto;
+  background-size:  auto 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.warranty p{
+  font-size: 18px;
+}
+.About h1{
+  font-size: 30px;
+}
+.About{
+  display: block;
+  height: auto;
+  width: 100%;
+  float: left;
+  margin:20px 0 20px;
+  background-image: url(images/choose_red_large.jpg) ;
+  background-size: auto 100%;
+}
+.About p{
+  font-size: 18px;
+
+
+}
+.blackbg{
+    background: rgba(0,0,0,0.7);
+    margin:10%;
+    border-radius: 30px;
+}
+.Delivery h1{
+  font-size: 30px;
+}
+.Delivery{
+  height: auto;
+  background-size:  auto 100%;
+}
+
+.Delivery p{
+  font-size: 18px;
+}
+
+.Service h1{
+  font-size: 30px;
+}
+.Service p{
+  font-size: 18px;
+
+}
+.Service{
+    height: auto;
+  background-size:  auto 100%;
+}
+}
+@media only screen and (max-width: 1200px) and (min-width: 601px){
+  .iphone{
+  width: 49%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.price{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+  }
+  #i6s{
+  float: none;
+  height: 50%;
+  width: auto;
+  margin: 8% auto;
+  display: block;
+}
+#i6{
+  float: none;
+  height: 50%;
+  width: auto;
+  margin: 8% auto;
+  display: block;
+}
+#i5s{
+  float: none;
+  height: 50%;
+  width: auto;
+  margin: 8% auto;
+  display: block;
+}
+#i7{
+  float: none;
+  height: 50%;
+  width: auto;
+  margin: 8% auto;
+  display: block;
+}
+#i8{
+  float: none;
+  height: 50%;
+  width: auto;
+  margin: 8% auto;
+  display: block;
+}
+#ix{
+  float: none;
+  height: 50%;
+  width: auto;
+  margin: 8% auto;
+  display: block;
+}
+#ixs{
+  float: none;
+  height: 50%;
+  width: auto;
+  margin: 8% auto;
+  display: block;
+}
+#ixr{
+  float: none;
+  height: 50%;
+  width: auto;
+  margin: 8% auto;
+  display: block;
+
+}
