@@ -405,8 +405,8 @@ height: 200px;
   font-family: 'San Francisco Text Light';
   font-size: 20px;
   width: 100%;
-  padding:3% 30% 10%;
   text-align: center;
+  padding: 5%;
 
 }
 @media only screen and (max-width: 600px) and (min-width: 300px) {
@@ -565,18 +565,9 @@ body{
 .About h1{
   font-size: 30px;
 }
-.About{
-  display: block;
-  height: auto;
-  width: 100%;
-  float: left;
-  margin:20px 0 20px;
-  background-image: url(images/choose_red_large.jpg) ;
-  background-size: auto 100%;
-}
+
 .About p{
   font-size: 18px;
-
 
 }
 .blackbg{
@@ -604,8 +595,8 @@ body{
 
 }
 .Service{
-    height: auto;
-  background-size:  auto 100%;
+  height: auto;
+  background-size: auto 100%;
 }
 }
 @media only screen and (max-width: 1200px) and (min-width: 601px){
