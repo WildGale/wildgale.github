@@ -309,6 +309,7 @@ height: 200px;
   background-size: 100% auto;
   width: 100%;
   float: left;
+  margin:20px 0 20px;
 }
 
 .warranty p{
@@ -333,7 +334,7 @@ height: 200px;
   height: auto;
   width: 100%;
   float: left;
-  margin:20px 0 20px;
+  margin:20px 0 0px;
   background-image: url(images/choose_red_large.jpg) ;
   background-size: auto 100%;
 }
@@ -367,8 +368,8 @@ height: 200px;
   height: auto;
   width: 100%;
   float: left;
-  margin:20px 0 20px;
-  background-image: url(images/1.jpg) ;
+  margin:20px 0 0px;
+  background-image: url(images/Service.jpg) ;
   background-size: 100% auto;
 }
 
@@ -395,8 +396,8 @@ height: 200px;
   height: auto;
   width: 100%;
   float: left;
-  margin:20px 0 20px;
-  background-image: url(images/2.jpg) ;
+  margin:20px 0 0px;
+  background-image: url(images/Deli.jpg) ;
   background-size: 100% auto;
 }
 .Service p{
