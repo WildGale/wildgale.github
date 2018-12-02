@@ -674,5 +674,10 @@ body{
   width: auto;
   margin: 8% auto;
   display: block;
-
+}
+.menu__links-item {
+    padding-right: 5%;
+    padding-left: 0;
+    float:right;
+}
 }
