@@ -1,1 +1,1 @@
-# wildgale.github.io
+# wildgale.github
